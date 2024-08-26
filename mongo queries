@@ -1,0 +1,23 @@
+mongo | mongosh -//open a connectoion to the local mongo-db instance
+show dbs - show all databases
+use db-name - create and switch to the database 
+db - prints current database
+db.dropDatabase() - delete the current database
+
+
+show collections - show  all collections in database
+db.createCollections("collection-name") - create a collection with a name
+
+CRUD -Create  Read  Update  Delete
+
+//create
+
+db.collectionname.insertOne({create object same as the syntax of javascript})//create a new document inside the collection
+
+db.collectionname.insertMany([{create object same as the syntax of javascript}])//creates multiple new documents  inside the collection
+
+//read
+
+db.collectionname.find()//it will show the contents of collection in the current database
+
+
